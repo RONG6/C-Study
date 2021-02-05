@@ -1,7 +1,76 @@
 #define _CRT_SECURE_NO_WARNINGS 1 
 #include<stdio.h>
 
-int main() {
+int main()
+{
+	int i = 0;
+	while (i<=10)
+	{
+		i++;
+		if (i == 5)continue;
+			printf("%d\n", i);
+			
+	}
+	return 0;
+}
+
+
+/*int main() {
+	int n = 1;
+	int m = 2;
+	switch (n) {
+	case 1:
+		m++;//m==3
+	case 2:
+		n++;//n==2
+	case 3:
+		switch (n)//n=2 可以进行
+		{//switch 语句可以嵌套使用
+		case 1:
+			n++;
+		case 2:
+			m++;//m=4
+			n++;//n=3
+			break;
+		default:
+			break;
+		}
+	case 4:
+		m++;//m=5;
+		break;
+	}
+	printf(" m= %d,n=%d", m, n);
+	return 0;
+}*/
+/*int main() {
+	int day = 0;
+	while (1)
+	{
+		scanf("%d", &day);
+		switch (day)
+		{
+		case 1:
+			printf("星期1\n"); break;
+		case 2:
+			printf("星期2\n"); break;
+		case 3:
+			printf("星期3\n"); break;
+		case 4:
+			printf("星期4\n"); break;
+		case 5:
+			printf("星期5\n");
+			break;
+		default:
+			printf("输入错误\n");
+		}
+		day = 0;
+	}
+	return 0;
+}
+
+
+
+/*int main() {
 	int day = 0;
 	scanf("%d", &day);
 	if (1 == day)
@@ -11,8 +80,7 @@ int main() {
 	else if (3 == day)
 		printf("星期3\n");
 	return 0;
-
-}
+}*/
 
 ////练习1
 //int main() {
