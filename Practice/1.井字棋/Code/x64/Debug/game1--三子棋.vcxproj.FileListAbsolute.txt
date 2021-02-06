@@ -1,0 +1,2 @@
+E:\Code\game1--三子棋\x64\Debug\game1--三子棋.exe
+E:\Code\game1--三子棋\x64\Debug\game1--三子棋.pdb
