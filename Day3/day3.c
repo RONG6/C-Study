@@ -1,7 +1,61 @@
 #define _CRT_SECURE_NO_WARNINGS 1 
 #include<stdio.h>
-
 int main()
+{
+	int i,j = 0;
+	//                  i为0，0代表假。就循环一次，是复制操作不是，判断语句。
+	for ( i = 0,j = 0; i = 0; i++,j++)
+	{
+		j++;
+		printf("%d%d\n", i, j);
+	}
+	//for (;;)
+		//printf("hehe\n");
+	/*int i = 0;
+	//    初始    判断   调整
+	for (i = 0; i <= 10; i++)
+	{
+		if (i == 5)
+		{
+			continue;
+		}
+		printf("%d\n", i);
+	}*/
+	return 0;
+}
+
+
+/*/*int main() {
+	int ret = 0;
+	char password[20] = { 0 };
+	int ch = 0;
+	printf("请输入密码：");
+	scanf("%s", password);//输入密码，存放在password数组中
+	while (ch = getchar() != '\n') 	;
+	printf("请确定密码（Y/N）：");
+	ret = getchar();
+	if (ret == 'Y')
+		printf("确认成功");
+	else
+		printf("确认失败");
+	printf("%s", &password);
+	/*int ch = 0;
+	//EOF -- end of file 文件结束的标志
+	while ((ch = getchar()) != EOF)
+	{
+		putchar(ch);
+//	}*/
+//
+//
+//
+//	return 0;
+//}*/
+//
+
+
+
+
+/*int main()
 {
 	int i = 0;
 	while (i<=10)
@@ -12,7 +66,7 @@ int main()
 			
 	}
 	return 0;
-}
+}*/
 
 
 /*int main() {
