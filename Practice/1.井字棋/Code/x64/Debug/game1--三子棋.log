@@ -1,4 +1,2 @@
 ﻿  game.c
-E:\Code\game1--三子棋\game.c(5,20): warning C4028: 形参 1 与声明不同
-E:\Code\game1--三子棋\game.c(151,17): warning C4013: “IsFull”未定义；假设外部返回 int
-  game1--三子棋.vcxproj -> E:\Code\game1--三子棋\x64\Debug\game1--三子棋.exe
+  game1--三子棋.vcxproj -> E:\Code\Study\Practice\1.井字棋\Code\x64\Debug\game1--三子棋.exe

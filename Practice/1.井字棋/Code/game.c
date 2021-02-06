@@ -1,8 +1,8 @@
-#define _CRT_SECURE_NO_WARNINGS 1 
+#define _CRT_SECURE_NO_WARNINGS
 #include"game.h"
 
 
-void InitBoard(int board[ROW][COL], int row, int col)
+void InitBoard(char board[ROW][COL], int row, int col)
 {
 	int i = 0;
 	int j = 0;
@@ -88,23 +88,32 @@ void DisplayBoard(char board[ROW][COL], int row, int col)
 //	}
 //}
 //玩家走
-void Player(char board[ROW][COL], int row, int col) {
+
+void Player(char board[ROW][COL], int row, int col)
+{
 	int x = 0;
 	int y = 0;
-	puts("玩家走");
-	while (1) {
+	printf("玩家走：>\n");
+	while (1)
+	{
 		printf("请输入要下的坐标:>");
-		scanf("%d%d", &x , &y);
-		//判断X,Y坐标的合法性。
-		if (x >= 1 && x <= row && y >= 1 && y <= col) {
-			if (board[x - 1][y - 1] == ' ') {
+		scanf_s("%d%d", &x, &y);
+		//判断x,y坐标的合法性
+		if (x >= 1 && x <= row && y >= 1 && y <= col)
+		{
+			if (board[x - 1][y - 1] == ' ')
+			{
 				board[x - 1][y - 1] = '*';
-				break;//落子成功，跳出程序。
-			}else {
-				puts("改坐标被占用");
+				break;
 			}
-		}else {
-			puts("坐标错误，请重新输入！");
+			else
+			{
+				printf("该坐标被占用\n");
+			}
+		}
+		else
+		{
+			printf("坐标非法，请重新输入!\n");
 		}
 	}
 }
@@ -126,6 +135,23 @@ void Computer(char board[ROW][COL], int row, int col) {
 	}
 	}
 
+//返回1表示棋盘满了；
+//返回0表示棋盘没满。
+int IsFull(char board[ROW][COL], int row, int col) {
+	int i = 0;
+	int j = 0;
+	for (i = 0; i < row; i++)//确定行
+	{
+		for (j = 0; j < col; j++)//确定列
+		{
+			if (board[i][j] == ' ')
+			{
+				return 0;//没满
+			}
+		}
+	}
+	return 1;//满了
+}
 
 //判断是否赢
 char Iswin(char board[ROW][COL], int row, int col) {
@@ -157,20 +183,3 @@ char Iswin(char board[ROW][COL], int row, int col) {
 
 
 
-//返回1表示棋盘满了；
-//返回0表示棋盘没满。
-int IsFull(char board[ROW][COL], int row, int col) {
-	int i = 0;
-	int j = 0;
-	for (i = 0; i < row; i++)//确定行
-	{
-		for (j = 0; j < col; j++)//确定列
-		{
-			if (board[i][j] == ' ')
-			{
-				return 0;//没满
-			}
-		}
-	}
-	return 1;//满了
-}

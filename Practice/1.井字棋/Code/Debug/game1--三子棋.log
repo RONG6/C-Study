@@ -1,2 +1,6 @@
-﻿  test.c
-  game1--三子棋.vcxproj -> E:\Code\game1--三子棋\Debug\game1--三子棋.exe
+﻿  game.c
+E:\Code\Study\Practice\1.井字棋\Code\game.c(5,20): warning C4028: 形参 1 与声明不同
+E:\Code\Study\Practice\1.井字棋\Code\game.c(160,17): warning C4013: “IsFull”未定义；假设外部返回 int
+  test.c
+test.obj : error LNK2019: 无法解析的外部符号 _Player，函数 _game 中引用了该符号
+E:\Code\game1\Debug\game1--三子棋.exe : fatal error LNK1120: 1 个无法解析的外部命令
