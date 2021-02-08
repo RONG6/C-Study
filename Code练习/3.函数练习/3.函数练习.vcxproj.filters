@@ -18,5 +18,8 @@
     <ClCompile Include="text2_8.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="函数的递归.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
